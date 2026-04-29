@@ -1,0 +1,265 @@
+[33mcommit 61724ded8c16cdd5160515d6afc625cede62f776[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Merge: c228f07 6411278
+Author: Shaady Khatab <shaady.khatab@cariad.technology>
+Date:   Wed Apr 29 16:16:47 2026 +0200
+
+    Merge branch 'master' of https://github.com/sam-khatab/nd0821-c3-starter-code
+
+[33mcommit c228f07ca866a0991ae45d2fa11fd051eae2dcaf[m
+Author: Shaady Khatab <shaady.khatab@cariad.technology>
+Date:   Wed Apr 29 16:16:21 2026 +0200
+
+    Successfully tested API
+
+[33mcommit 64112781cf565009053fb27832c37de9601d8405[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sam-khatab <sskhattab@gmail.com>
+Date:   Wed Apr 29 12:08:32 2026 +0200
+
+    Update Python version in GitHub Actions workflow
+
+[33mcommit 606c2ce62ad8539b20715c151225394bff9566ce[m
+Author: sam-khatab <sskhattab@gmail.com>
+Date:   Wed Apr 29 11:55:21 2026 +0200
+
+    Update Python version and requirements path in workflow
+
+[33mcommit 530201cacd4d51b4fb87a901388850907dc4573e[m
+Merge: 406493b f34c97b
+Author: Sudhanshu Kulshrestha <sudhanshu.kulshrestha@gmail.com>
+Date:   Wed Oct 1 16:31:59 2025 +0530
+
+    Merge pull request #45 from udacity/version-upgrade
+    
+    feat: upgrade to Python 3.13
+
+[33mcommit f34c97b345792bada30bc8a38e957a6adfde66d7[m
+Author: Abhi Ojha <abhiojha8@gmail.com>
+Date:   Mon Sep 22 11:16:58 2025 +0530
+
+    update deps and documentation
+
+[33mcommit 406493b7a86084036380a16a25d279a0f41473c0[m
+Author: Sudhanshu Kulshrestha <sudhanshu.kulshrestha@gmail.com>
+Date:   Thu Sep 11 23:08:28 2025 +0530
+
+    Create dependabot.yml
+
+[33mcommit 9dceaf3b61942395b6aac9e65d42ea0c1d1a8a67[m
+Author: sudkul <sudhanshu.kulshrestha@gmail.com>
+Date:   Fri Sep 5 17:21:13 2025 +0530
+
+    remove deprecated action
+
+[33mcommit bd40051db80342d02497c8a40b72d4f0eea58ace[m
+Author: sudkul <sudhanshu.kulshrestha@gmail.com>
+Date:   Fri Sep 5 17:17:41 2025 +0530
+
+    feat: upgrade to Python 3.13
+    
+    - Update Python version from 3.8 to 3.13.0
+    - Update dependencies to latest compatible versions
+    - Update scikit-learn OneHotEncoder parameter for compatibility
+    - Add version upgrade documentation
+    
+    Dependencies updated:
+    - numpy >= 1.26.0
+    - pandas >= 2.1.0
+    - scikit-learn >= 1.3.0
+    - fastapi >= 0.103.0
+    - uvicorn >= 0.23.0
+    - gunicorn >= 21.2.0
+
+[33mcommit e1662e831eca8318a12b261ea5808245a75a6872[m
+Author: Abhi Ojha <abhiojha8@gmail.com>
+Date:   Tue Jun 14 15:07:56 2022 +0530
+
+    Update README.md
+
+[33mcommit 46b16fe7eb53e50b99a35dad3031ccd4fb3bf99d[m
+Author: Farhan Ahmad <38903756+fa-ahmad@users.noreply.github.com>
+Date:   Fri Dec 10 18:19:00 2021 +0530
+
+    Update model_card_template.md
+    
+    Clarify requirements under the metrics section.
+
+[33mcommit 765e400ab2de46d36e06b7daf2f77c19d6e0464e[m
+Author: SudKul <48475411+SudKul@users.noreply.github.com>
+Date:   Wed Nov 3 16:15:08 2021 +0530
+
+    Create manual.yml
+
+[33mcommit 7d01fedf945f9a8c6340efbe2d8e4108df8dfd2e[m
+Merge: 4c8643e 3381595
+Author: SudKul <48475411+SudKul@users.noreply.github.com>
+Date:   Wed Nov 3 16:13:39 2021 +0530
+
+    Merge pull request #3 from fa-ahmad/master
+    
+    Introduce Presubmission Automated Sanity Testing
+
+[33mcommit 3381595ba66279f11ce5d76d2ae45b6e58c9ce3f[m
+Author: Farhan Ahmad <farhan@udacity.com>
+Date:   Wed Nov 3 16:12:08 2021 +0530
+
+    Delete instructions (menat for staff).
+
+[33mcommit c000690cfdd47c4c34d23776d72486ea85046c51[m
+Author: Farhan Ahmad <farhan@udacity.com>
+Date:   Wed Nov 3 13:58:08 2021 +0530
+
+    Add classroom instructions for running test cases.
+
+[33mcommit 086a548f0cfbad6acd2ffc0b4a4e92f0c9b8b0bd[m
+Author: Farhan Ahmad <farhan@udacity.com>
+Date:   Wed Oct 27 16:42:40 2021 +0530
+
+    Fix: Update warning message about checking being heuristic-based.
+
+[33mcommit 59d76f556c79e1584394ac30005c81490f7fc1e0[m
+Author: Farhan A <farhan@Farhans-MacBook-Pro.local>
+Date:   Wed Oct 27 16:28:28 2021 +0530
+
+    Fix: Condition for detecting test for response needs an OR between the two predicates.
+
+[33mcommit f237fc35bbc41d6d7cba7a043af57194ff7cdd8c[m
+Merge: 276c6d7 d944c83
+Author: Farhan A <farhan@Farhans-MacBook-Pro.local>
+Date:   Wed Oct 27 16:17:02 2021 +0530
+
+    Merge branch 'master' of github.com:fa-ahmad/nd0821-c3-starter-code
+
+[33mcommit 276c6d788e3339c2f69d08508bc059e7f2269519[m
+Author: Farhan A <farhan@Farhans-MacBook-Pro.local>
+Date:   Wed Oct 27 16:11:21 2021 +0530
+
+    Fix: Detect alternative code for json parsing.
+
+[33mcommit d944c83c4c0f304ff0cf80ab1aef47d994904825[m
+Author: Farhan A <farhan@Farhans-MacBook-Pro.local>
+Date:   Wed Oct 27 16:11:21 2021 +0530
+
+    Fix: Detect alternative code for json parsing.
+
+[33mcommit de53496a47832f60e37500aba9d3c16dd9a91f61[m
+Merge: c724efa 4c8643e
+Author: Farhan A <farhan@Farhans-MacBook-Pro.local>
+Date:   Mon Oct 25 17:42:30 2021 +0530
+
+    Merge branch 'master' of github.com:fa-ahmad/nd0821-c3-starter-code
+
+[33mcommit c724efa56606d2b466f286ca2ac89a2241cb8f4c[m
+Author: Farhan A <farhan@Farhans-MacBook-Pro.local>
+Date:   Mon Oct 25 17:40:29 2021 +0530
+
+    Add code for sanity checking.
+
+[33mcommit 4c8643e2dc14a74768e49c76d92253ff193f60e8[m
+Author: SudKul <48475411+SudKul@users.noreply.github.com>
+Date:   Thu Oct 21 19:01:39 2021 +0530
+
+    Create CODEOWNERS
+
+[33mcommit 3680c057f0751df53b0dae86f5490f72ff2f99a9[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Mon Jun 7 21:12:38 2021 -0700
+
+    Updated model card template to be more clear.
+    
+    The logical flow of the sections is smoother and redundancies were removed.
+
+[33mcommit f2d606cc84c4e12c1ceea89d314cda83f36d6ccf[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Wed Apr 21 08:39:15 2021 -0700
+
+    Update README.md
+
+[33mcommit d4e385ca3d86c57b8686dc0670b87dbdb1b92b4c[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Wed Apr 21 08:38:30 2021 -0700
+
+    Create .gitignore
+
+[33mcommit cefd01dd88bd460212ace03fa5046492f4ef6b66[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Tue Apr 20 22:34:44 2021 -0700
+
+    Add files via upload
+
+[33mcommit b78e1d54a403afb06b5a4884bac13d8ffbcbcfa6[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Tue Apr 20 22:29:09 2021 -0700
+
+    Update README.md
+
+[33mcommit a23bdaf1400d1cedc2e3a50c76aa1c0517b02936[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Tue Apr 20 22:25:39 2021 -0700
+
+    Create model_card_template.md
+
+[33mcommit 9c1ff91823a8bda4bc4517c5642385d72e69d1e9[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Tue Apr 20 22:18:32 2021 -0700
+
+    Create dvc_on_heroku_instructions.md
+
+[33mcommit 00b00201279ae3d743d89a92f012a342e16ff4b2[m
+Author: Yasmine A <yabd89@gmail.com>
+Date:   Fri Apr 16 11:51:17 2021 -0400
+
+    Update README.md
+
+[33mcommit 894ea7ac8ae9609280689431d346e055e401ff7f[m
+Author: Yasmine A <yabd89@gmail.com>
+Date:   Fri Apr 16 11:50:44 2021 -0400
+
+    Update README.md
+
+[33mcommit b0ca1cd90b52dd2fdd4c306d6f04b38ee6b4ac30[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:38:47 2021 -0700
+
+    Flesh out starter code.
+
+[33mcommit 89eee83f4ffba7a7078d5829a8ea6ce25268e38a[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:17:25 2021 -0700
+
+    Turn it into a module.
+
+[33mcommit 1f8c7c0a73d84feefce805de0fce76170d0641a2[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:16:37 2021 -0700
+
+    Training stub.
+
+[33mcommit 1e5e6c23c6cc1a573c5288f59321710fbd37e47d[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:14:41 2021 -0700
+
+    Core module starter code.
+
+[33mcommit b04ef15422a348625d5226d9c3105d45a8b9e67d[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:12:36 2021 -0700
+
+    Create initial data folder.
+
+[33mcommit b1cd74bbeac821bfd71b2562f0dcf55ad41addd8[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:12:07 2021 -0700
+
+    Create initial model folder.
+
+[33mcommit 98139b48a693578be57fc3f3a50d9d89181636e8[m
+Author: Justin Clifford Smith <32110303+JustCliffSmith@users.noreply.github.com>
+Date:   Sun Apr 4 20:11:44 2021 -0700
+
+    Commit of top level starter files.
+
+[33mcommit 92b24ea312b2771994e5fc62e7d7d7589f80a16b[m
+Author: Yasmine A <yabd89@gmail.com>
+Date:   Tue Mar 30 16:21:08 2021 -0400
+
+    Initial commit

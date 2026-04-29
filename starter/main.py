@@ -7,15 +7,17 @@ from joblib import load
 import pandas as pd
 from pydantic import BaseModel, ConfigDict, Field
 
-from starter import train_model
-from starter.ml.data import process_data
-from starter.ml.model import inference
+
+from starter.starter.ml.data import process_data
+from starter.starter.ml.model import inference
+
 
 app = FastAPI()
 
-MODEL_PATH =  Path("model") / "rf_model.joblib"
-ENCODER_PATH = Path("model") / "encoder.joblib"
-LB_PATH = Path("model") / "lb.joblib"
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "model" / "rf_model.joblib"
+ENCODER_PATH = BASE_DIR / "model" / "encoder.joblib"
+LB_PATH = BASE_DIR / "model" / "lb.joblib"
 RF_MODEL = load(MODEL_PATH) if MODEL_PATH.exists() else None
 ENCODER = load(ENCODER_PATH) if ENCODER_PATH.exists() else None
 LB = load(LB_PATH) if LB_PATH.exists() else None
@@ -78,8 +80,7 @@ async def get_items():
 
 @app.post("/train")
 async def train():
-    train_model
-    return "Trained model..."
+    return {"message": "Run starter/starter/train_model.py to retrain and save the model artifacts."}
 
 @app.post("/inference")
 async def inference_app(payload: CensusInput):

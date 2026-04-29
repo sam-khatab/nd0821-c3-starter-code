@@ -1,5 +1,5 @@
-torch==2.10.0
-torchvision==0.25.0
+torch==2.10.0 #added to get the correct version of torch, which is a dependency for the starter code. This version is compatible with torchvision 0.25.0.
+torchvision==0.25.0 #added to get the correct version of torch, which is a dependency for the starter code. This version is compatible with torch 2.10.0.
 
 # Core API stack
 fastapi==0.117.1
