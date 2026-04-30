@@ -42,7 +42,8 @@ class CensusInput(BaseModel):
     fnlgt: int = Field(example=77516)
     education: str = Field(example="Bachelors")
     education_num: int = Field(alias="education-num", example=13)
-    marital_status: str = Field(alias="marital-status", example="Never-married")
+    marital_status: str = Field(
+        alias="marital-status", example="Never-married")
     occupation: str = Field(example="Adm-clerical")
     relationship: str = Field(example="Not-in-family")
     race: str = Field(example="White")
@@ -50,7 +51,8 @@ class CensusInput(BaseModel):
     capital_gain: int = Field(alias="capital-gain", example=2174)
     capital_loss: int = Field(alias="capital-loss", example=0)
     hours_per_week: int = Field(alias="hours-per-week", example=40)
-    native_country: str = Field(alias="native-country", example="United-States")
+    native_country: str = Field(
+        alias="native-country", example="United-States")
 
     def to_dataframe(self) -> pd.DataFrame:
         return pd.DataFrame(
@@ -74,22 +76,39 @@ class CensusInput(BaseModel):
             ]
         )
 
+
 @app.get("/")
 async def get_items():
     return "Welcome to API HELL"
 
+
 @app.post("/train")
 async def train():
-    return {"message": "Run starter/starter/train_model.py to retrain and save the model artifacts."}
+    return {
+        "message": (
+            "Run starter/starter/train_model.py "
+            "to retrain and save the model artifacts."
+        )
+    }
+
 
 @app.post("/inference")
 async def inference_app(payload: CensusInput):
     if RF_MODEL is None:
-        raise HTTPException(status_code=500, detail="Model file not found: model/rf_model.joblib")
+        raise HTTPException(
+            status_code=500,
+            detail="Model file not found: model/rf_model.joblib"
+        )
     if ENCODER is None:
-        raise HTTPException(status_code=500, detail="Encoder file not found: model/encoder.joblib")
+        raise HTTPException(
+            status_code=500,
+            detail="Encoder file not found: model/encoder.joblib"
+        )
     if LB is None:
-        raise HTTPException(status_code=500, detail="Label binarizer file not found: model/lb.joblib")
+        raise HTTPException(
+            status_code=500,
+            detail="Label binarizer file not found: model/lb.joblib"
+        )
 
     processed_features, _, _, _ = process_data(
         data=payload.to_dataframe(),
