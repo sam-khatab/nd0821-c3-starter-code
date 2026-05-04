@@ -19,15 +19,23 @@ feature_census_input = CensusInput(
     native_country="United-States"
 )
 
-response1 = str(requests.get('https://nd0821-c3-starter-code-ux0t.onrender.com/').content)
-response2 = str(requests.post('https://nd0821-c3-starter-code-ux0t.onrender.com/train').content)
-response3_raw = requests.post(
-    'https://nd0821-c3-starter-code-ux0t.onrender.com/inference',
-    json=feature_census_input.model_dump(by_alias=True)
-)
-response3 = str(response3_raw.content)
+def call_api():
+    response1 = requests.get('https://nd0821-c3-starter-code-ux0t.onrender.com/')
+    response2 = requests.post('https://nd0821-c3-starter-code-ux0t.onrender.com/train')
+    response3 = requests.post(
+        'https://nd0821-c3-starter-code-ux0t.onrender.com/inference',
+        json=feature_census_input.model_dump(by_alias=True)
+    )
 
 
 
-print(response3_raw.status_code)
-print(response3)
+
+    print(f"Get Response Status Code: {response1.status_code}")
+    print(f"Get Response: {str(response1.content)}")
+    print(f"Train Response Status Code: {response2.status_code}")
+    print(f"Train Response: {str(response2.content)}")
+    print(f"Inference Response Status Code: {response3.status_code}")
+    print(f"Inference Response: {str(response3.content)}")
+
+if __name__ == "__main__":
+    call_api()
