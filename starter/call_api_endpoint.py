@@ -20,9 +20,9 @@ feature_census_input = CensusInput(
 )
 
 response1 = str(requests.get('https://nd0821-c3-starter-code-ux0t.onrender.com/').content)
-response2 = str(requests.post('http://127.0.0.1:8000/train').content)
+response2 = str(requests.post('https://nd0821-c3-starter-code-ux0t.onrender.com/train').content)
 response3_raw = requests.post(
-    'http://127.0.0.1:8000/inference',
+    'https://nd0821-c3-starter-code-ux0t.onrender.com/inference',
     json=feature_census_input.model_dump(by_alias=True)
 )
 response3 = str(response3_raw.content)
