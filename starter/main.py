@@ -8,16 +8,9 @@ import pandas as pd
 from pydantic import BaseModel, ConfigDict, Field
 
 
-try:
-    # Works when this module is loaded with starter/ as sys.path[0]
-    from starter.ml.data import process_data
-    from starter.ml.model import inference
-    from starter.train_model import train_model
-except ModuleNotFoundError:
-    # Works when this module is imported as starter.main from repo root
-    from starter.starter.ml.data import process_data
-    from starter.starter.ml.model import inference
-    from starter.starter.train_model import train_model
+from starter.starter.ml.data import process_data
+from starter.starter.ml.model import inference
+from starter.starter.train_model import train_model
 
 
 app = FastAPI()
