@@ -1,0 +1,12 @@
+Feature: age, Value: 25
+    Precision: 0.9791666666666666, Recall: 0.8867924528301887, F1: 0.9306930693069307
+
+Feature: education, Value: Bachelors
+    Precision: 0.949084412684234, Recall: 0.9567762269248087, F1: 0.952914798206278
+
+Feature: race, Value: White
+    Precision: 0.9517082312238719, Recall: 0.927638049740059, F1: 0.9395189981499928
+
+Feature: race, Value: Black
+    Precision: 0.9672131147540983, Recall: 0.9147286821705426, F1: 0.9402390438247012
+

@@ -60,3 +60,33 @@ def inference(model, X):
         Predictions from the model.
     """
     return model.predict(X)
+
+def slice_metrics(data, model, feature, value):
+    """
+    Computes metrics for a specific slice of the data.
+
+    Inputs
+    ------
+    data : dataframe containing the features and labels
+
+    feature : str
+        Feature name to slice on.
+    value : any
+        Value of the feature to slice on.
+
+    Returns
+    -------
+    precision : float
+    recall : float
+    fbeta : float
+    """
+    data = data[data[feature]==value]
+
+    X = data.drop("salary", axis=1)
+    y = data["salary"]
+    preds = inference(model, X)
+    precision, recall, fbeta = compute_model_metrics(y, preds)
+    with open("slice_output.txt", "a") as fp:
+        fp.write(f"Feature: {feature}, Value: {value}\n") 
+        fp.write(f"    Precision: {precision}, Recall: {recall}, F1: {fbeta}\n\n")
+    

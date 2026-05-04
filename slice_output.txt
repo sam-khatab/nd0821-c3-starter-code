@@ -1,0 +1,48 @@
+Feature: age, Value: 25
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: education, Value: Bachelors
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: White
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: Black
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: age, Value: 25
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: education, Value: Bachelors
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: White
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: Black
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: age, Value: 25
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: education, Value: Bachelors
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: White
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: Black
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: age, Value: 25
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: education, Value: Bachelors
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: White
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
+Feature: race, Value: Black
+    Precision: 0.9515199161425576, Recall: 0.9261573778854738, F1: 0.9386673560395528
+
