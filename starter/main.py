@@ -8,8 +8,8 @@ import pandas as pd
 from pydantic import BaseModel, ConfigDict, Field
 
 
-from starter.starter.ml.data import process_data
-from starter.starter.ml.model import inference
+from starter.ml.data import process_data
+from starter.ml.model import inference
 
 
 app = FastAPI()
@@ -84,12 +84,7 @@ async def get_items():
 
 @app.post("/train")
 async def train():
-    return {
-        "message": (
-            "Run starter/starter/train_model.py "
-            "to retrain and save the model artifacts."
-        )
-    }
+    return {"message": "Run starter/starter/train_model.py to retrain and save the model artifacts."}
 
 
 @app.post("/inference")
